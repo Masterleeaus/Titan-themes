@@ -1,0 +1,8 @@
+{
+  "name": "Painting",
+  "slug": "painting",
+  "version": "0.1.0",
+  "extends": "titan-zero-core",
+  "status": "foundation",
+  "type": "vertical-overlay"
+}

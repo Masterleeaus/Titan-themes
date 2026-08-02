@@ -3,6 +3,31 @@
   "slug": "cleaning",
   "version": "0.1.0",
   "extends": "titan-zero-core",
-  "workcoreDomains": ["crm", "premises", "workforce", "scheduling", "operations", "inventory", "finance", "documents", "compliance"],
-  "navigation": ["Home", "Today", "Schedule", "Jobs", "Customers", "Properties", "Quality", "Team", "Supplies", "Quotes & Invoices", "Reports", "AI Team"]
+  "workcoreDomains": [
+    "crm",
+    "premises",
+    "workforce",
+    "scheduling",
+    "operations",
+    "inventory",
+    "finance",
+    "documents",
+    "compliance"
+  ],
+  "navigation": [
+    "Home",
+    "Today",
+    "Schedule",
+    "Jobs",
+    "Customers",
+    "Properties",
+    "Quality",
+    "Team",
+    "Supplies",
+    "Quotes & Invoices",
+    "Reports",
+    "AI Team"
+  ],
+  "type": "vertical-overlay",
+  "status": "reference"
 }
