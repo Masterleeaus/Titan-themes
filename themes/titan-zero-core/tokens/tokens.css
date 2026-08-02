@@ -1,0 +1,38 @@
+:root {
+  --tz-font-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --tz-space-1: 0.25rem;
+  --tz-space-2: 0.5rem;
+  --tz-space-3: 0.75rem;
+  --tz-space-4: 1rem;
+  --tz-space-6: 1.5rem;
+  --tz-space-8: 2rem;
+  --tz-radius-sm: 0.5rem;
+  --tz-radius-md: 0.875rem;
+  --tz-radius-lg: 1.25rem;
+  --tz-touch-target: 2.75rem;
+  --tz-bg: #f6f8fb;
+  --tz-surface: #ffffff;
+  --tz-surface-muted: #eef2f7;
+  --tz-text: #18212f;
+  --tz-text-muted: #667085;
+  --tz-border: #dfe5ec;
+  --tz-accent: #2563eb;
+  --tz-accent-contrast: #ffffff;
+  --tz-success: #15803d;
+  --tz-warning: #b45309;
+  --tz-danger: #b42318;
+  --tz-info: #0369a1;
+  --tz-shadow-card: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+[data-theme="night"] {
+  --tz-bg: #0b1020;
+  --tz-surface: #121a2b;
+  --tz-surface-muted: #1a2438;
+  --tz-text: #f3f6fb;
+  --tz-text-muted: #9ba8bd;
+  --tz-border: #2b3850;
+  --tz-accent: #6ea8ff;
+  --tz-accent-contrast: #07111f;
+  --tz-shadow-card: 0 12px 36px rgba(0, 0, 0, 0.28);
+}
