@@ -1,0 +1,20 @@
+{
+  "slots": [
+    "navigation.primary",
+    "dashboard.summary",
+    "dashboard.attention",
+    "workspace.primary",
+    "workspace.secondary",
+    "composer.context",
+    "public.hero",
+    "public.services",
+    "public.trust",
+    "public.cta"
+  ],
+  "statePriority": ["critical", "danger", "warning", "success", "brand", "neutral"],
+  "rules": [
+    "Vertical overlays may register slot content but may not replace the platform shell.",
+    "Operational state colours override tenant and vertical branding.",
+    "All interactive field controls meet the configured touch-target minimum."
+  ]
+}

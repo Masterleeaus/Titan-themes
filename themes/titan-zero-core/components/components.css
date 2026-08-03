@@ -1,0 +1,79 @@
+.tz-card {
+  background: var(--tz-surface);
+  border: 1px solid var(--tz-border);
+  border-radius: var(--tz-radius-lg);
+  box-shadow: var(--tz-shadow-card);
+  padding: var(--tz-space-6);
+}
+
+.tz-metric-grid {
+  display: grid;
+  gap: var(--tz-space-4);
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+}
+
+.tz-metric-card__label {
+  color: var(--tz-text-muted);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.tz-metric-card__value {
+  color: var(--tz-text);
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 750;
+  line-height: 1.1;
+  margin-top: var(--tz-space-2);
+}
+
+.tz-status {
+  align-items: center;
+  border-radius: 999px;
+  display: inline-flex;
+  font-size: 0.75rem;
+  font-weight: 700;
+  gap: var(--tz-space-2);
+  min-height: 1.75rem;
+  padding: 0 var(--tz-space-3);
+}
+
+.tz-status--neutral { background: var(--tz-surface-muted); color: var(--tz-text); }
+.tz-status--success { background: color-mix(in srgb, var(--tz-success) 14%, transparent); color: var(--tz-success); }
+.tz-status--warning { background: color-mix(in srgb, var(--tz-warning) 14%, transparent); color: var(--tz-warning); }
+.tz-status--danger,
+.tz-status--critical { background: color-mix(in srgb, var(--tz-danger) 14%, transparent); color: var(--tz-danger); }
+
+.tz-action {
+  align-items: center;
+  background: var(--tz-accent);
+  border: 0;
+  border-radius: var(--tz-radius-md);
+  color: var(--tz-accent-contrast);
+  cursor: pointer;
+  display: inline-flex;
+  font: inherit;
+  font-weight: 700;
+  justify-content: center;
+  min-height: var(--tz-touch-target);
+  padding: 0 var(--tz-space-4);
+}
+
+.tz-sync-indicator {
+  align-items: center;
+  color: var(--tz-text-muted);
+  display: inline-flex;
+  font-size: 0.8125rem;
+  gap: var(--tz-space-2);
+}
+
+.tz-sync-indicator::before {
+  background: currentColor;
+  border-radius: 50%;
+  content: "";
+  height: 0.5rem;
+  width: 0.5rem;
+}
+
+.tz-sync-indicator[data-state="offline"] { color: var(--tz-warning); }
+.tz-sync-indicator[data-state="conflict"] { color: var(--tz-danger); }
+.tz-sync-indicator[data-state="synced"] { color: var(--tz-success); }

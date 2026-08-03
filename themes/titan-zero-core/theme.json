@@ -1,0 +1,10 @@
+{
+  "name": "Titan Zero Core",
+  "slug": "titan-zero-core",
+  "version": "0.1.0",
+  "type": "platform-theme",
+  "description": "Canonical layered platform theme for Titan Zero.",
+  "surfaces": ["manager", "field", "customer", "public"],
+  "variants": ["standard", "compact", "executive", "field", "night"],
+  "verticalAware": true
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Pest Control",
+  "slug": "pest-control",
+  "version": "0.1.0",
+  "extends": "titan-zero-core",
+  "status": "foundation",
+  "type": "vertical-overlay"
+}
