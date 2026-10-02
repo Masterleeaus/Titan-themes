@@ -1,6 +1,6 @@
 <div align="center">
 
-# Titan Themes
+# Titan Design System
 
 **A layered design-system foundation for Titan Zero field and home-service experiences.**
 
