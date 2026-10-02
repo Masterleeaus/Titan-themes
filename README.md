@@ -52,4 +52,5 @@ Review the repository's license and release metadata before redistributing the s
 
 ## Banner
 
-No verified wide banner is checked into the repository; the centered typographic header is used until a project-specific design asset is added.
+A checked-in project-specific banner is displayed above.
+
