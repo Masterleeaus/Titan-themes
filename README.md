@@ -1,3 +1,5 @@
+![Titan Design System — TOKENS · COMPONENTS · VERTICAL THEMES](docs/images/portfolio-banner.svg)
+
 <div align="center">
 
 # Titan Design System
