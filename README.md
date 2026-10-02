@@ -8,6 +8,13 @@
 
 </div>
 
+## Product architecture and engineering highlights
+
+A design-system foundation for Titan interfaces, combining shared platform themes with industry-specific experience overlays.
+
+- **Architecture:** Versioned manifests define tokens, component contracts, surface patterns, and vertical overlays for cleaning, electrical, HVAC, landscaping, painting, pest control, plumbing, and property maintenance.
+- **Distinctive engineering:** The standout is controlled visual and workflow variation: vertical terminology, forms, checklists, widgets, and actions can build on shared platform primitives.
+
 > **Status: source foundation and reference manifests.** The repository contains a platform theme manifest, design tokens, component contracts, surface components, vertical overlay manifests, and validation scripts. It is not a standalone application or a released theme marketplace package.
 
 ## Architecture
