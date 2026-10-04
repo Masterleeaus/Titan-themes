@@ -1,4 +1,4 @@
-![Titan Design System — TOKENS · COMPONENTS · VERTICAL THEMES](docs/images/portfolio-banner.svg)
+![Titan Themes — source foundation for tokens, component contracts, surface patterns, and vertical overlays](docs/images/titan-themes-banner.svg)
 
 <div align="center">
 
@@ -9,6 +9,10 @@
 </div>
 
 ## Product architecture and engineering highlights
+
+<p align="center">
+  <img src="docs/images/titan-themes-architecture.svg" alt="Titan Themes layers Titan Zero Core tokens and component contracts with versioned vertical overlays and experience surfaces, validated by Python scripts." width="100%" />
+</p>
 
 A design-system foundation for Titan interfaces, combining shared platform themes with industry-specific experience overlays.
 
