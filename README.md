@@ -19,12 +19,14 @@ Titan-themes has two deliberate layers:
 
 The overlay model keeps variation declarative. A vertical can describe how a shared surface should read and behave without becoming a second application or taking ownership of host-side approval and tenancy rules.
 
+The current source includes the Titan Zero Core manifest and eight reference/foundation vertical overlays for cleaning, electrical, HVAC, landscaping, painting, pest control, plumbing, and property maintenance.
+
 ## Source map
 
 - themes/titan-zero-core/theme.json — platform theme manifest
 - themes/titan-zero-core/tokens/tokens.css — checked-in design tokens
 - themes/titan-zero-core/components/component-contract.json — component contract
-- themes/titan-zero-core/components/ and surfaces/ — implementation examples
+- themes/titan-zero-core/components/ and themes/titan-zero-core/surfaces/ — implementation examples
 - verticals/*/vertical.json — versioned overlay declarations for the supported service industries
 - docs/ — implementation plans and architecture notes
 - tests/ — structural foundation and architecture checks
