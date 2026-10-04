@@ -4,13 +4,65 @@
 
 > A versioned design-system foundation for Titan Zero field and home-service experiences, where shared primitives stay consistent while vertical overlays change the language and workflow.
 
+## Overview
+
 Titan-themes gives a product team a concrete place to define platform tokens, component contracts, surface patterns, and industry-specific manifests. It is designed for a host application that needs cleaning, electrical, HVAC, landscaping, painting, pest-control, plumbing, and property-maintenance experiences without duplicating the visual foundation.
+
+
+## Measured evidence
+
+Titan Themes is a **design-system and contract repository**, so its evidence is structural rather than model or product-performance benchmarking.
+
+| Measured property | Current source state | Reproduce / inspect |
+| --- | ---: | --- |
+| Vertical overlays | **8** | cleaning, electrical, HVAC, landscaping, painting, pest control, plumbing, property maintenance |
+| Core platform surfaces | **4** | manager, field, customer, public |
+| Core theme variants | **5** | standard, compact, executive, field, night |
+| Declared component slots | **10** | component contract |
+| Operational state-priority levels | **6** | critical → danger → warning → success → brand → neutral |
+| Deterministic validator scripts | **2** | foundation + architecture boundary checks |
+| CI validation lane | runs both Python validators on PRs and main/feature pushes | `.github/workflows/validate.yml` |
+| Browser visual regression | **Not established** | future evidence needed |
+| Accessibility conformance benchmark | **Not established** | future evidence needed |
+| Live host integration | **Not established** | host-specific validation required |
+
+Reproduce the checked-in structural gates:
+
+```bash
+python tests/validate-foundation.py
+python tests/validate-architecture.py
+```
+
+The foundation validator confirms the core manifest, token sheet, component contract and cleaning overlay baseline. The architecture validator checks required implementation examples and prevents vertical overlays from replacing platform-owned `shell`, `themes`, `auth` or `database` areas.
+
+## What is new
+
+The technical signature is a **declarative vertical-overlay model**: industry-specific terminology and workflow presentation can change while the host application's shell and authority boundaries remain stable.
+
+```text
+Titan Zero platform core
+      ├── tokens
+      ├── component contracts
+      ├── shared surfaces
+      └── state semantics
+              ↓
+       vertical overlay
+      ├── terminology
+      ├── workflow labels
+      ├── forms/checklists
+      ├── widgets
+      └── declared AI actions
+              ↓
+         host application
+```
+
+The key design constraint is that a vertical overlay may contribute content and experience metadata, but it may **not** become a second application architecture. Host-owned authentication, tenancy, database, approval and execution concerns stay outside the theme layer.
 
 <p align="center">
   <img src="docs/images/titan-themes-architecture.svg" alt="Titan Themes layers Titan Zero Core tokens and component contracts with versioned vertical overlays and experience surfaces, validated by Python scripts." width="100%" />
 </p>
 
-## Why this project matters
+## Product problem
 
 Home-service software often drifts into a set of one-off screens: each vertical gets its own labels, forms, checklists, and widgets, and the platform loses consistency. Titan-themes separates the stable platform layer from controlled vertical variation so a host application can evolve both without replacing its authority, tenancy, or security boundaries.
 
@@ -25,7 +77,7 @@ The overlay model keeps variation declarative. A vertical can describe how a sha
 
 The current source includes the Titan Zero Core manifest and eight reference/foundation vertical overlays for cleaning, electrical, HVAC, landscaping, painting, pest control, plumbing, and property maintenance.
 
-## Source map
+## Verified capabilities and source map
 
 - themes/titan-zero-core/theme.json — platform theme manifest
 - themes/titan-zero-core/tokens/tokens.css — checked-in design tokens
@@ -36,7 +88,7 @@ The current source includes the Titan Zero Core manifest and eight reference/fou
 - tests/ — structural foundation and architecture checks
 - releases/titan-themes-source.zip — packaged source snapshot
 
-## Validate the foundation
+## Reproducible verification
 
 Run the repository checks with Python 3:
 
@@ -47,7 +99,7 @@ python tests/validate-architecture.py
 
 These scripts validate structural invariants in manifests, component contracts, and overlay declarations. They are intentionally narrower than browser, accessibility, package-install, and live-host integration testing.
 
-## Evidence map
+## Evidence boundaries
 
 - The core theme manifest and component contract show how shared platform primitives are declared.
 - The token stylesheet, component stylesheet, Blade components, and surfaces provide concrete examples rather than only abstract design guidance.
