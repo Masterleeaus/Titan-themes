@@ -45,6 +45,13 @@ python tests/validate-architecture.py
 
 The repository defines these checks; this README update did not execute them. Successful validation confirms structural invariants, not visual accessibility or integration with the live Titan Zero app.
 
+## Evidence map
+
+- `themes/titan-zero-core/theme.json` and `components/component-contract.json` define the platform manifest and component contract.
+- `themes/titan-zero-core/tokens/tokens.css`, `components/components.css`, and the Blade files under `components/` and `surfaces/` are the checked-in implementation examples.
+- `verticals/*/vertical.json` contains the versioned overlay declarations; those manifests may name AI actions, but this repository does not execute models or own host approvals, tenancy, or security.
+- The two Python scripts are structural checks only. There is no browser, accessibility, package-install, or live-host integration test in this repository.
+
 ## Development provenance
 
 The README previously referred to `feature/titan-theme-foundation` as the active branch. Confirm current branch/release state before using that as workflow guidance; the default-branch content and validation files are the source inspected here.
